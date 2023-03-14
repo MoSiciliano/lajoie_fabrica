@@ -1,0 +1,67 @@
+@use"./global";
+@use"./variables";
+//contacto mobile
+.grid_Contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 
+    "title"
+    "texto"
+    "formu"
+    ;
+    margin-bottom:0;
+    .titulo{
+    grid-area: title;
+    justify-items: start;
+    font-family:'Roboto', sans-serif;
+    }
+    .texto{
+    grid-area: texto;
+    font-family: 'Montserrat', sans-serif;
+    justify-items:center
+    }
+    .form{
+    grid-area: formu;
+    justify-items: start;
+    }
+}
+.marginContact{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+
+//Desktop
+
+@media screen and (min-width: 600px) {
+    .marginContact{
+        margin-top:10px;
+    }
+    .grid_Contacto{
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+        "title title formu"
+        "texto texto formu"
+        "texto texto formu"
+        ;
+        margin: 1px, 1px, 0%, 1px;
+        
+    }
+    .titulo{
+        grid-area: title;
+    }
+    .texto{
+        grid-area: texto;
+    }
+    .form{
+        grid-area: formu;
+    }
+
+}

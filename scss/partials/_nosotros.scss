@@ -1,0 +1,102 @@
+@use"./variables";
+@use"./global";
+//nosotros~mobile
+.marginNos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+    align-items:start;
+
+    .header{
+        grid-area: header;
+    }
+
+    .main{
+        background-color:rgb(253, 247, 239);
+        grid-area: main;
+    }
+
+    .footer{
+        grid-area: footer;
+    }
+
+}
+.conteinImg{
+    height: 80vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/img/fondo_nosotros.jpg);
+    background-size: cover;
+    background-position: center;
+
+    
+    div{
+        color: white;
+        text-align: center;
+        width:100%;
+        font-size: 1rem;
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    }
+}
+.mapa{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "texto"
+    "mapa"
+    ;
+    h2{
+        grid-area: texto;
+       text-align: variables.$text-center;
+    }
+    .p{
+       grid-area: texto;
+       text-align: variables.$text-center;
+    }
+    iframe{
+        grid-area: mapa
+    }
+
+}
+
+//Desktop
+
+@media screen and (min-width: 600px) {
+    .marginNos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        "header"
+        "main"
+        "footer"
+        ;
+        align-items:start;
+    
+    }
+    .mapa{
+        width: fit-content;
+        display:grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-areas: 
+        "texto mapa"
+        ;
+        align-items: center;
+        h2{
+            grid-area: texto;
+           text-align: variables.$text-center;
+        }
+        .p{
+           grid-area: texto;
+        }
+        iframe{
+            grid-area: mapa
+        }
+    }
+}

@@ -1,0 +1,75 @@
+@use"./global";
+@use"./variables";
+//index~mobile
+
+.grilla{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    align-items:start;
+    .header{
+    grid-area: header;
+    }
+    .main{
+    grid-area: main;
+    }
+}
+.grid_Carrusel{
+    display: grid;
+    justify-items:center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    padding:0;
+    border:0;
+    width: 100vh;
+    height: 100vh;
+    background-size: cover;
+    .grid__Item{
+       overflow:scroll;
+    
+        .imgCarrusel{
+             width: 100vh;
+             height: 100vh; 
+        }
+    }   
+}
+
+//vista desktop
+
+@media screen and (min-width: 600px) {
+    .grilla{
+        display:grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+        align-self:center
+    }
+    //carrusel
+    .grid_Carrusel{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items:center;
+        align-items: center;
+        padding:0;
+        border:0;
+        margin-left:auto;
+        margin-right: auto;
+        width: 90vw;
+        height: 100vh;
+        background-size: cover;
+        .imgCarrusel{
+            width: 100%;
+        }
+         
+    }
+}   
+

@@ -1,0 +1,76 @@
+@use"./global";
+@use"./variables";
+//info~mobile
+.marginInfo{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    .header{
+        grid-area: header;
+    }
+
+    .main{
+        grid-area: main;
+    }
+ 
+    .footer{
+        grid-area: footer;
+    }
+
+}
+
+.tituloI{
+    padding-bottom: 0;
+    h1{
+        margin:0;
+    }
+    p{
+        margin:0;
+    }
+}
+.acordion{
+    h3{
+        font-family: variables.$font-family;
+        text-align: start;
+        color:black;
+    }
+}
+
+//Vista~desktop
+
+@media screen and (min-width: 600px){
+    .tituloI{
+        h1{
+            margin:0;
+        }
+        p{
+            margin:0;
+        }
+    }
+    .gridMain{
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3,auto);
+        grid-template-areas: 
+        "none titulo none"
+        "preg none none"
+        "none acordion none"
+        ;
+        align-items: center;
+        .tituloI{
+            grid-area: titulo;
+        }
+        h3{
+            grid-area: preg;
+            text-align: center;
+            border-color: rgb(252, 233, 209);
+        }
+        .acordion{
+            grid-area:acordion;
+        }
+    }
+}
