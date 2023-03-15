@@ -10,13 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--FAVICON-->
+    <link rel="icon" href="../img/favicon_io/favicon-32x32.png">
     <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="../css/archivo.css" />
 </head>
 <body>
-    <header class="header container-fluid containHeader">
+    <div class="marginProduc">
+    <header class="header container-fluid containHeader padding0">
         <nav class="navbar navbar-expand-md  contain_nav">
             <div class="container-fluid">
                 <a class="navbar-brand col" href="../index.html">
@@ -57,14 +60,122 @@
         </nav>
     </header>
     <main class="main">
-     <div id="arriba">
-        <h1 class="text">Productos
-        </h1>
-        <h2>
-            <p class="p">Productos/<b>Living></b></p>
-        </h2>
-     </div>
+        <div id="arriba">
+          <h1>Productos</h1>
+          <h2>
+              <p class="p">Categoria/<b>Living</b></p>
+          </h2>
+        </div>
+        <section class="grid_productos">
+  
+          <!--offcanva vista mobile-->
+          <article class="offcanva">
+            <i class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarNav"> 
+              <a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFxJREFUSEtjZKAxYKSx+QyjFhAM4eEZRP8J+hu/ApRQwRZENLeAQg+gah/wSCY2uHA6lJAPaG4BxfFByAd0tQA9uIhyHFGKoN6guQVkBRcpPhi1gKwQIKhp6McBACZ4Bhljo5edAAAAAElFTkSuQmCC"/></a>
+            </i>
+            <div class="offcanvas offcanvas-start" id="sidebarNav">
+              <div class="offcanvas-header">
+                <buttom class="btn btn-close" type="button" data-bs-dismiss="offcanvas"></buttom>  
+                <br>
+                <div class="offcanvas-title"> 
+                  <h2 class="text-decoration-underline">Categorias</h2>
+                </div>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="ul">
+                  <li>
+                    <a class="nav-link" aria-current="page" href="./habitacion.html">
+                      <p class="text-muted">Habitacion</p>
+                    </a>
+                  </li>
+                  <li >
+                    <a class="nav-link" href="./living.html"> 
+                      <p class="text-muted">Living</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>  
+            </div>
+          </article>
+  
+          <!--Productos-->
+          <article>
+            <div class="mt-0 cardProductos">
+              <div class="cardsSize">
+                <div class="row"> 
+                    <div class="cards col-sm-12 face ">
+                        <div class="card face-front">
+                          <img src="../img/iloveimg-resized/22730911-a6dc696ff34a71376416711135773066-640-0.jpg" class="card-img-top img-fluid imgCard" alt="foto de un producto">
+                        </div>
+                        <div class="face-back">
+                          <img src="../img/iloveimg-resized/22730911-a6dc696ff34a71376416711135773066-640-0.jpg" class="card-img-top img-fluid imgCard" alt="foto de un producto">
+                        </div>
+                    </div>
+                    <div class="cards col-sm-12 face ">
+                        <div class="card face-front">
+                          <img src="../img/iloveimg-resized/10000402131-8f9ad7933335f42fe216711140546000-640-0.jpg" class="card-img-top img-fluid imgCard" alt="foto de un producto">
+                        </div>
+                        <div class="face-back">
+                            <img src="../img/iloveimg-resized/10000402131-8f9ad7933335f42fe216711140546000-640-0.jpg" class="card-img-top img-fluid imgCard" alt="foto de un producto">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" cards col-sm-12 face ">
+                        <div class="card face-front">
+                          <img src="../img/iloveimg-resized/20611-ae89897d4c7c66238716711155341760-640-0.jpg" class="card-img-top img-fluid imgCard" alt="foto de un producto">
+                        </div>
+                        <div class="face-back">
+                            <img src="../img/iloveimg-resized/20611-ae89897d4c7c66238716711155341760-640-0.jpg" class="card-img-top img-fluid imgCard" alt="foto de un producto">
+                        </div>
+                    </div>
+                    <div class="cards col-sm-12 face ">
+                        <div class="card face-front">
+                           <img src="../img/iloveimg-resized/100004021411-6fd303c3929529bbe816711157722742-640-0.jpg" class="card-img-top img-fluid imgCard" alt="foto de un producto">
+                        </div>
+                        <div class="face-back">
+                            <img src="../img/iloveimg-resized/100004021411-6fd303c3929529bbe816711157722742-640-0.jpg" class="card-img-top img-fluid imgCard" alt="foto de un producto">
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </article> 
+        </section>
     </main>
+    <!--aside de categorias desktop-->
+        
+    <aside class="aside">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item headerAcordion">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapse show" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <p class="h3">Categorias</p>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <div class="form-check">
+                    <a class="nav-link" href="./living.html">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"  checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                           <p class="text-muted">Living</p>
+                        </label>
+                    </a>
+                </div> 
+                <a class="nav-link" aria-current="page" href="./habitacion.html">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                        <label class="form-check-label" for="flexCheckChecked">
+                          <p class="text-muted">Habitacion</p>
+                        </label>
+                    </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
     <!--footer-->
     <footer class="footer">
       <section>
@@ -110,8 +221,10 @@
         </i>
        </a>
       </div>
-    </footer>
-   <!--fin de footer-->
+    </footer> 
+    <!--fin de footer-->
+    </div>
+  
    <!--Script Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
