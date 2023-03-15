@@ -137,21 +137,6 @@ body{
             }
     }
     //living style
-    .face{
-        transition: 1s;
-        backface-visibility: hidden;
-        .face-front{
-            transform:perspective(500px), rotatedY(0deg);
-            &:hover{
-                transform:perspective(500px), rotatedY(180deg);
-            }
-        }
-        .face-back{
-            transform:perspective(500px), rotatedY(180deg);
-            &:hover{
-                transform:perspective(500px), rotatedY(3680deg);
-            }
-        }
-    }
+    
 }
     

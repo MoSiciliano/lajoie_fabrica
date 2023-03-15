@@ -451,22 +451,6 @@ body {
     height: 400px;
     width: 500px;
   }
-  .face {
-    transition: 1s;
-    backface-visibility: hidden;
-  }
-  .face .face-front {
-    transform: perspective(500px), rotatedY(0deg);
-  }
-  .face .face-front:hover {
-    transform: perspective(500px), rotatedY(180deg);
-  }
-  .face .face-back {
-    transform: perspective(500px), rotatedY(180deg);
-  }
-  .face .face-back:hover {
-    transform: perspective(500px), rotatedY(3680deg);
-  }
 }
 
 /*# sourceMappingURL=archivo.css.map */
