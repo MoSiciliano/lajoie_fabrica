@@ -91,7 +91,14 @@ h2 .p {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "aside none none" "none article none" "none none contacto";
+    grid-template-areas: "aside none none" "mapside article contacto" "mapside article contacto";
+  }
+  .h4 {
+    margin: 5% 5% 0% 2%;
+    font-size: 1rem;
+  }
+  .mapside {
+    grid-area: mapside;
   }
 }
 .grilla {
@@ -118,9 +125,6 @@ h2 .p {
   height: 100vh;
   background-size: cover;
 }
-.grid_Carrusel .grid__Item {
-  overflow: scroll;
-}
 .grid_Carrusel .grid__Item .imgCarrusel {
   width: 100vh;
   height: 100vh;
@@ -142,7 +146,7 @@ h2 .p {
     align-items: center;
     padding: 0;
     border: 0;
-    margin-left: auto;
+    margin: 10vh auto 2% auto;
     margin-right: auto;
     width: 90vw;
     height: 100vh;
@@ -150,6 +154,11 @@ h2 .p {
   }
   .grid_Carrusel .imgCarrusel {
     width: 100%;
+  }
+  .tituloCarrusel {
+    font-size: 2rem;
+    color: rgba(20, 19, 19, 0.623);
+    text-shadow: 0 0 8px rgba(114, 108, 108, 0.8);
   }
 }
 .marginNos {
@@ -254,6 +263,8 @@ h2 .p {
 }
 .tituloI p {
   margin: 0;
+  color: black;
+  text-shadow: white;
 }
 
 .acordion h3 {
@@ -272,16 +283,24 @@ h2 .p {
   .gridMain {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "titulo acordion" "titulo acordion";
-  }
-  .gridMain .tituloI {
-    grid-area: titulo;
-    text-align: center;
-    border-color: rgb(252, 233, 209);
+    grid-template-areas: "titulo acordion";
   }
   .gridMain .acordion {
     grid-area: acordion;
+  }
+  .tituloI {
+    grid-area: titulo;
+    border-color: rgb(252, 233, 209);
+    background-image: url(/img/images.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .tituloI .subtituloI {
+    margin-top: 5vh;
+    color: black;
+    text-shadow: 0 0 8px rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2rem;
   }
 }
 body {
@@ -410,13 +429,13 @@ body {
   }
   .cardProductos .cards:hover .boxText {
     display: block;
-    border: solid black;
     position: absolute;
     bottom: 100px;
     margin: 30%;
     padding: 1%;
     font-size: 2rem;
     text-align: center;
+    color: aliceblue;
     text-shadow: 0 0 8px rgba(15, 15, 15, 0.8);
   }
   .cardProductos .imgCard {

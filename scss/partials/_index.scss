@@ -28,14 +28,13 @@
     width: 100vh;
     height: 100vh;
     background-size: cover;
-    .grid__Item{
-       overflow:scroll;
-    
+    .grid__Item{    
         .imgCarrusel{
              width: 100vh;
              height: 100vh; 
         }
-    }   
+    }
+    
 }
 
 //vista desktop
@@ -61,7 +60,7 @@
         align-items: center;
         padding:0;
         border:0;
-        margin-left:auto;
+        margin:10vh auto 2% auto;
         margin-right: auto;
         width: 90vw;
         height: 100vh;
@@ -69,7 +68,12 @@
         .imgCarrusel{
             width: 100%;
         }
-         
+        
     }
+    .tituloCarrusel{
+            font-size: 2rem;
+            color:rgba(20, 19, 19, 0.623);
+            text-shadow: 0 0 8px rgba(114, 108, 108, 0.8);
+        }
 }   
 
