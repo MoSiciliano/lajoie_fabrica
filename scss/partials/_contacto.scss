@@ -1,31 +1,6 @@
 @use"./global";
 @use"./variables";
 //contacto mobile
-.grid_Contacto{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,auto);
-    grid-template-areas: 
-    "title"
-    "texto"
-    "formu"
-    ;
-    margin-bottom:0;
-    .titulo{
-    grid-area: title;
-    justify-items: start;
-    font-family:'Roboto', sans-serif;
-    }
-    .texto{
-    grid-area: texto;
-    font-family: 'Montserrat', sans-serif;
-    justify-items:center
-    }
-    .form{
-    grid-area: formu;
-    justify-items: start;
-    }
-}
 .marginContact{
     display:grid;
     grid-template-columns: 1fr;
@@ -34,6 +9,31 @@
     "main"
     "footer"
     ;
+    align-items: flex-start;
+}
+.grid_Contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "title"
+    "texto"
+    "formu"
+    ;
+    
+}
+.titulo{
+    grid-area: title;
+    justify-items: start;
+    font-family:'Roboto', sans-serif;
+}
+.texto{
+    grid-area: texto;
+    font-family: 'Montserrat', sans-serif;
+    justify-items:center
+}
+.form{
+    grid-area: formu;
+    justify-items: start;
 }
 
 //Desktop
@@ -51,7 +51,6 @@
         "texto texto formu"
         "texto texto formu"
         ;
-        margin: 1px, 1px, 0%, 1px;
         
     }
     .titulo{

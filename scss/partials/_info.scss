@@ -27,7 +27,7 @@
 .tituloI{
     padding-bottom: 0;
     h1{
-        margin:0;
+        margin-top: 2vh;
     }
     p{
         margin:0;
@@ -46,31 +46,27 @@
 @media screen and (min-width: 600px){
     .tituloI{
         h1{
-            margin:0;
+            top:0%;
         }
         p{
             margin:0;
         }
     }
     .gridMain{
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(3,auto);
-        grid-template-areas: 
-        "none titulo none"
-        "preg none none"
-        "none acordion none"
+        display:grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2,auto);
+        grid-template-areas:
+        "titulo acordion"
+        "titulo acordion"
         ;
-        align-items: center;
         .tituloI{
-            grid-area: titulo;
-        }
-        h3{
-            grid-area: preg;
+          grid-area: titulo;
             text-align: center;
             border-color: rgb(252, 233, 209);
         }
         .acordion{
-            grid-area:acordion;
+           grid-area:acordion;
         }
     }
 }
