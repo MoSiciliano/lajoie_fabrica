@@ -1,6 +1,11 @@
 @use"./global";
 @use"./variables";
 //contacto mobile
+h1{
+    margin-top: 2vh;
+    text-align: center;
+    font-family: variables.$font-titulo;
+}
 .marginContact{
     display:grid;
     grid-template-columns: 1fr;

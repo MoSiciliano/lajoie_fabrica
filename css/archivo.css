@@ -152,56 +152,6 @@ h2 .p {
     width: 100%;
   }
 }
-.marginContact {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "header" "main" "footer";
-  align-items: flex-start;
-}
-
-.grid_Contacto {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "title" "texto" "formu";
-}
-
-.titulo {
-  grid-area: title;
-  justify-items: start;
-  font-family: "Roboto", sans-serif;
-}
-
-.texto {
-  grid-area: texto;
-  font-family: "Montserrat", sans-serif;
-  justify-items: center;
-}
-
-.form {
-  grid-area: formu;
-  justify-items: start;
-}
-
-@media screen and (min-width: 600px) {
-  .marginContact {
-    margin-top: 10px;
-  }
-  .grid_Contacto {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "title title formu" "texto texto formu" "texto texto formu";
-  }
-  .titulo {
-    grid-area: title;
-  }
-  .texto {
-    grid-area: texto;
-  }
-  .form {
-    grid-area: formu;
-  }
-}
 .marginNos {
   display: grid;
   grid-template-columns: 1fr;
@@ -225,7 +175,7 @@ h2 .p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(/img/fondo_nosotros.jpg);
+  background-image: url(/img/fondo_nosotros.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -460,7 +410,7 @@ body {
   }
   .cardProductos .cards:hover .boxText {
     display: block;
-    background-color: rgb(233, 229, 229);
+    border: solid black;
     position: absolute;
     bottom: 100px;
     margin: 30%;
@@ -473,6 +423,62 @@ body {
     padding-bottom: 15%;
     height: 400px;
     width: 500px;
+  }
+}
+h1 {
+  margin-top: 2vh;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.marginContact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer";
+  align-items: flex-start;
+}
+
+.grid_Contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "title" "texto" "formu";
+}
+
+.titulo {
+  grid-area: title;
+  justify-items: start;
+  font-family: "Roboto", sans-serif;
+}
+
+.texto {
+  grid-area: texto;
+  font-family: "Montserrat", sans-serif;
+  justify-items: center;
+}
+
+.form {
+  grid-area: formu;
+  justify-items: start;
+}
+
+@media screen and (min-width: 600px) {
+  .marginContact {
+    margin-top: 10px;
+  }
+  .grid_Contacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "title title formu" "texto texto formu" "texto texto formu";
+  }
+  .titulo {
+    grid-area: title;
+  }
+  .texto {
+    grid-area: texto;
+  }
+  .form {
+    grid-area: formu;
   }
 }
 
