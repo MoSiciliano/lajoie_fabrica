@@ -17,30 +17,33 @@
     .main{
     grid-area: main;
     }
+    width: auto;
 }
 .grid_Carrusel{
     display: grid;
     justify-items:center;
     align-items: center;
     grid-template-columns: 1fr;
-    padding:0;
     border:0;
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
-    background-size: cover;
     .grid__Item{    
+        padding:5%;
+
         .imgCarrusel{
-             width: 100vh;
+             width: 80vw;
              height: 100vh; 
         }
     }
     
 }
 h5{
-    color:black;   
+    color:black;
+    
 }
 .textoCarrusel{
-        color: black;
+        color:black;
+        font-size:1.2rem;
     }
 //vista desktop
 

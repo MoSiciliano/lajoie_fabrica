@@ -112,6 +112,7 @@ h2 .p {
   grid-template-columns: 1fr;
   grid-template-areas: "header" "main" "footer";
   align-items: start;
+  width: auto;
 }
 .grilla .header {
   grid-area: header;
@@ -125,14 +126,15 @@ h2 .p {
   justify-items: center;
   align-items: center;
   grid-template-columns: 1fr;
-  padding: 0;
   border: 0;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
-  background-size: cover;
+}
+.grid_Carrusel .grid__Item {
+  padding: 5%;
 }
 .grid_Carrusel .grid__Item .imgCarrusel {
-  width: 100vh;
+  width: 80vw;
   height: 100vh;
 }
 
@@ -142,6 +144,7 @@ h5 {
 
 .textoCarrusel {
   color: black;
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 600px) {
