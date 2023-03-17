@@ -76,6 +76,12 @@ h2 .p {
 .footer .redes {
   grid-area: contacto;
 }
+.footer ul {
+  list-style-type: none;
+}
+.footer ul li {
+  list-style-type: none;
+}
 
 @media screen and (min-width: 600px) {
   nav {
@@ -128,6 +134,14 @@ h2 .p {
 .grid_Carrusel .grid__Item .imgCarrusel {
   width: 100vh;
   height: 100vh;
+}
+
+h5 {
+  color: black;
+}
+
+.textoCarrusel {
+  color: black;
 }
 
 @media screen and (min-width: 600px) {
@@ -184,7 +198,7 @@ h2 .p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/img/fondo_nosotros.jpg");
+  background-image: url("../img/fondo_nosotros.jpg");
   background-size: cover;
   background-position: center;
 }
