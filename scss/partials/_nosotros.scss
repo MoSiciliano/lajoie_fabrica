@@ -35,13 +35,14 @@
     background-size: cover;
     background-position: center;
 
-    
+
     div{
         color: white;
         text-align: center;
         width:100%;
         font-size: 1rem;
         text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        padding:2%;
     }
 }
 .mapa{
@@ -80,23 +81,28 @@
         align-items:start;
     
     }
+
     .mapa{
-        width: fit-content;
+
         display:grid;
         grid-template-columns: repeat(2,auto);
         grid-template-areas: 
         "texto mapa"
         ;
         align-items: center;
+        margin:top 2%;
         h2{
             grid-area: texto;
-           text-align: variables.$text-center;
+            text-align: variables.$text-center;
+            padding:2%;
+            margin:1%;
         }
         .p{
            grid-area: texto;
         }
         iframe{
-            grid-area: mapa
+            grid-area: mapa;
+            width: 50vw;
         }
     }
 }

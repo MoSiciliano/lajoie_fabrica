@@ -5,6 +5,9 @@
 }
 
 //header y nav
+body{
+    background-color:rgb(253, 247, 239);
+}
 .padding0{
       padding-left: 0;
       padding-right: 0;
@@ -73,6 +76,9 @@ h2{
     ;
     .asideFooter{
     grid-area: aside;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
     }
     .articleFooter{
     grid-area: article;
@@ -80,6 +86,7 @@ h2{
     .redes{
     grid-area: contacto;
     }
+    padding:2%;
     ul{
         list-style-type: none;
         li{
@@ -106,7 +113,7 @@ h2{
         grid-template-columns: repeat(3,auto);
         grid-template-rows: repeat(3,auto);
         grid-template-areas: 
-        "aside none none"
+        "aside aside aside"
         "mapside article contacto"
         "mapside article contacto"
         ;
@@ -114,6 +121,18 @@ h2{
     .h4{
         margin: 5% 5% 0% 2%;
         font-size:1rem;
+    }
+    .asideFooter{
+        display:flex;
+        justify-content: space-between;
+        padding:2%;
+    }
+    .articleFooter{
+        margin:2%;
+    }
+    .redes{
+        margin:2%;
+        margin-top:5%;
     }
     .mapside{
         grid-area:mapside;

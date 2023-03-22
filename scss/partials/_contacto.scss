@@ -24,6 +24,7 @@ h1{
     "texto"
     "formu"
     ;
+    padding:2%;
     
 }
 .titulo{
@@ -34,11 +35,18 @@ h1{
 .texto{
     grid-area: texto;
     font-family: 'Montserrat', sans-serif;
-    justify-items:center
+    justify-items:center;
 }
 .form{
     grid-area: formu;
     justify-items: start;
+}
+.main{
+    #arriba{
+        margin-top:0px;
+        padding-top:90px;
+        text-align: center;
+    }
 }
 
 //Desktop
