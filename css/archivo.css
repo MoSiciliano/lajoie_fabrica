@@ -232,8 +232,8 @@ h5 {
 }
 
 .conteinImg {
-  width: 100vw;
-  height: 80vh;
+  min-width: 100%;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -278,6 +278,12 @@ h5 {
     grid-template-areas: "header" "main" "footer";
     align-items: start;
   }
+  .marginNos .imgNos {
+    width: 500px;
+  }
+  .containImg {
+    width: 100vw;
+  }
   .mapa {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -298,6 +304,8 @@ h5 {
     grid-area: mapa;
     width: 1000px;
     height: 400px;
+    padding-top: 2%;
+    padding-left: 2%;
   }
 }
 .marginInfo {
