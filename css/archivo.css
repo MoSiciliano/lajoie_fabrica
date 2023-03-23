@@ -227,8 +227,12 @@ h5 {
 .marginNos .footer {
   grid-area: footer;
 }
+.marginNos .imgNos {
+  width: 100%;
+}
 
 .conteinImg {
+  width: 100vw;
   height: 80vh;
   display: flex;
   align-items: center;
@@ -250,6 +254,7 @@ h5 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "texto" "mapa";
+  align-items: center;
 }
 .mapa h2 {
   grid-area: texto;
@@ -261,6 +266,8 @@ h5 {
 }
 .mapa iframe {
   grid-area: mapa;
+  width: 200px;
+  height: 200px;
 }
 
 @media screen and (min-width: 600px) {
@@ -289,7 +296,8 @@ h5 {
   }
   .mapa iframe {
     grid-area: mapa;
-    width: 50vw;
+    width: 1000px;
+    height: 400px;
   }
 }
 .marginInfo {

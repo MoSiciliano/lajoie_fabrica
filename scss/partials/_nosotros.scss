@@ -14,8 +14,8 @@
 
     .header{
         grid-area: header;
+        
     }
-
     .main{
         background-color:rgb(253, 247, 239);
         grid-area: main;
@@ -24,9 +24,12 @@
     .footer{
         grid-area: footer;
     }
-
+    .imgNos{
+        width:100%;
+    }
 }
 .conteinImg{
+    width:100vw;
     height: 80vh;
     display:flex;
     align-items: center;
@@ -52,6 +55,7 @@
     "texto"
     "mapa"
     ;
+    align-items: center;
     h2{
         grid-area: texto;
        text-align: variables.$text-center;
@@ -61,7 +65,9 @@
        text-align: variables.$text-center;
     }
     iframe{
-        grid-area: mapa
+        grid-area: mapa;
+        width: 200px;
+        height: 200px;
     }
 
 }
@@ -102,7 +108,8 @@
         }
         iframe{
             grid-area: mapa;
-            width: 50vw;
+            width: 1000px;
+            height: 400px;
         }
     }
 }
