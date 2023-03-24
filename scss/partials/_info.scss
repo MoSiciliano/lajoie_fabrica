@@ -27,6 +27,7 @@
 .tituloI{
     padding-bottom: 0;
     
+    
     h1{
         margin-top: 2vh;
     }
@@ -70,7 +71,7 @@
         grid-area: titulo;
         
         border-color: rgb(252, 233, 209);
-        background-image: url(/img/images.jpg);
+        background-image: url(../img/images.jpg);
         
         background-size: cover;
         background-repeat: no-repeat;

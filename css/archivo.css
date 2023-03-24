@@ -415,7 +415,7 @@ h5 {
   .tituloI {
     grid-area: titulo;
     border-color: rgb(252, 233, 209);
-    background-image: url(/img/images.jpg);
+    background-image: url(../img/images.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
