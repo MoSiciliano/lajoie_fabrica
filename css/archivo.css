@@ -180,6 +180,28 @@ h5 {
   font-size: 1.2rem;
 }
 
+.infoMelamina {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: sticky;
+}
+.infoMelamina .texto1 {
+  margin: 2%;
+  width: 50%;
+}
+
+.textoMela {
+  margin: 2%;
+  padding: 2%;
+  font-size: 1.2rem;
+}
+
+.fotoMela {
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
   .grilla {
     display: grid;
@@ -214,21 +236,19 @@ h5 {
     display: block;
   }
   .infoMelamina {
-    height: 30vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
     margin-top: 2%;
-    position: fixed;
+    position: sticky;
   }
   .infoMelamina .texto1 {
     margin: 2%;
     width: 50%;
   }
   .infoMelamina .containMela {
-    margin-right: 2%;
     height: 30vw;
     width: 50%;
   }
@@ -238,8 +258,11 @@ h5 {
     font-size: 4rem;
   }
   .fotoMela {
-    width: 500px;
-    height: 350px;
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    margin: 0%;
   }
 }
 .marginNos {
