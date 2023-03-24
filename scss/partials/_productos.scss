@@ -100,17 +100,16 @@ body{
         .footer{
             grid-area: footer;
         }
-    }        
+    }      
     .aside{
         grid-area: aside;
         display:block;
-        margin-top: 150px;
+        margin-top: 200px;
         padding-top: 20px;
-        .headerAcordion{
-            background-color:transparent; 
-            border:none;
-            padding:0;
-            margin-top: 20px;
+        width:20vw;
+        .headerAside{
+            margin-left:2%;
+            //margin-top: 20px;
         }
             
     }
@@ -124,23 +123,25 @@ body{
         align-items: center;
         padding-left: 4%;
         padding-right: 0%;
-        margin:0%;
+
         .cards{
             overflow: hidden;
-            height: 50vh;
+            height: 60vh;
             width: 50%;
             transition: 1s;
-            margin
+
             .boxText{
               display:none;
             }
         &:hover{
             transform:scale(1.1);
             filter:brightness(0.6);
+            
             .boxText{
                 display:block;
                 position: absolute;
-                bottom:100px;
+                bottom:50px;
+                margin-top:50%;
                 margin:30%;
                 padding:1%;
                 font-size: 2rem;
@@ -148,12 +149,24 @@ body{
                 color:aliceblue;
                 text-shadow: 0 0 8px rgba(15, 15, 15, 0.8);
             }
+            .Body{
+                display:none;
+            }
         }
+        }
+        .cards{
+            margin-bottom: 2%;
         }
         
+        .Body{
+            display:block;
+            min-height: 10vh;
+            padding:0%;
+
+        }
         .imgCard{
-               padding-bottom: 15%;
-               height: 400px;
+              // padding-bottom: 15%;
+               height:50vh;
                width: 500px;
             }
     }

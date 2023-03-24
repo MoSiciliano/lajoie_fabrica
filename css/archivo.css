@@ -464,14 +464,12 @@ body {
   .aside {
     grid-area: aside;
     display: block;
-    margin-top: 150px;
+    margin-top: 200px;
     padding-top: 20px;
+    width: 20vw;
   }
-  .aside .headerAcordion {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin-top: 20px;
+  .aside .headerAside {
+    margin-left: 2%;
   }
   .offcanva {
     display: none;
@@ -483,15 +481,14 @@ body {
     align-items: center;
     padding-left: 4%;
     padding-right: 0%;
-    margin: 0%;
   }
   .cardProductos .cards {
     overflow: hidden;
-    height: 50vh;
+    height: 60vh;
     width: 50%;
     transition: 1s;
   }
-  .cardProductos .cards margin .boxText {
+  .cardProductos .cards .boxText {
     display: none;
   }
   .cardProductos .cards:hover {
@@ -501,7 +498,8 @@ body {
   .cardProductos .cards:hover .boxText {
     display: block;
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
+    margin-top: 50%;
     margin: 30%;
     padding: 1%;
     font-size: 2rem;
@@ -509,9 +507,19 @@ body {
     color: aliceblue;
     text-shadow: 0 0 8px rgba(15, 15, 15, 0.8);
   }
+  .cardProductos .cards:hover .Body {
+    display: none;
+  }
+  .cardProductos .cards {
+    margin-bottom: 2%;
+  }
+  .cardProductos .Body {
+    display: block;
+    min-height: 10vh;
+    padding: 0%;
+  }
   .cardProductos .imgCard {
-    padding-bottom: 15%;
-    height: 400px;
+    height: 50vh;
     width: 500px;
   }
 }
