@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -179,6 +180,10 @@ h5 {
   font-size: 1.2rem;
 }
 
+.informacion {
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
   .grilla {
     display: grid;
@@ -208,6 +213,38 @@ h5 {
     font-size: 3rem;
     color: rgba(20, 19, 19, 0.623);
     text-shadow: 0 0 8px rgba(114, 108, 108, 0.8);
+  }
+  .información {
+    display: block;
+  }
+  .infoMelamina {
+    display: block;
+    height: 30vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 2%;
+    position: fixed;
+  }
+  .infoMelamina .texto1 {
+    margin: 2%;
+    width: 50%;
+  }
+  .infoMelamina .containMela {
+    margin-right: 2%;
+    height: 30vw;
+    width: 50%;
+  }
+  .textoMela {
+    margin: 2%;
+    padding: 2%;
+    font-size: 4rem;
+  }
+  .fotoMela {
+    width: 500px;
+    height: 350px;
   }
 }
 .marginNos {
