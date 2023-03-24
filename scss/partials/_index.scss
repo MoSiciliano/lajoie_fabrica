@@ -60,9 +60,7 @@ h5{
     color:black;
     font-size:1.2rem;
 }
-.informacion{
-    display:none;
-}
+
 //vista desktop
 
 @media screen and (min-width: 600px) {
@@ -102,10 +100,10 @@ h5{
         text-shadow: 0 0 8px rgba(114, 108, 108, 0.8);
     }
     .información{
-        display:block; 
+        display:block;
     }
     .infoMelamina{
-        display:block;
+
         height:30vw;
         display:flex;
         flex-direction: row;
@@ -135,5 +133,5 @@ h5{
         height: 350px;
 
     }
-}   
 
+}   

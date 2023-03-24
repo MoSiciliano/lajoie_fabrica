@@ -180,10 +180,6 @@ h5 {
   font-size: 1.2rem;
 }
 
-.informacion {
-  display: none;
-}
-
 @media screen and (min-width: 600px) {
   .grilla {
     display: grid;
@@ -218,7 +214,6 @@ h5 {
     display: block;
   }
   .infoMelamina {
-    display: block;
     height: 30vw;
     display: flex;
     flex-direction: row;
@@ -543,9 +538,6 @@ body {
     text-align: center;
     color: aliceblue;
     text-shadow: 0 0 8px rgba(15, 15, 15, 0.8);
-  }
-  .cardProductos .cards:hover .Body {
-    display: none;
   }
   .cardProductos .cards {
     margin-bottom: 2%;
